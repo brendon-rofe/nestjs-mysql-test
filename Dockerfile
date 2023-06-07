@@ -1,9 +1,6 @@
 # Use the official Node.js v14 image as a base
 FROM node:14
 
-# Install FFmpeg
-RUN apt-get update && apt-get install -y ffmpeg
-
 # Set the working directory to /app
 WORKDIR /app
 
