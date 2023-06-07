@@ -7,12 +7,12 @@ export class PostsController {
 
   @Post()
   async create(@Body() post) {
-    await this.postsService.create(post);
+    return await this.postsService.create(post);
   };
 
   @Get()
   async findAll() {
-    await this.postsService.findAll();
+    return await this.postsService.findAll();
   };
 
 };
