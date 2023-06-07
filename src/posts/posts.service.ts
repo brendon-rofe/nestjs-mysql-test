@@ -9,11 +9,11 @@ export class PostsService {
 
   async findAll(): Promise<Post[]> {
     return await this.postRepo.find();
-  }
+  };
 
   async create(post: Post): Promise<Post> {
     const newPost = this.postRepo.create(post);
     await this.postRepo.save(newPost);
     return newPost;
-  }
+  };
 };
