@@ -6,7 +6,7 @@ import { PostsModule } from './posts/posts.module';
   imports: [
     TypeOrmModule.forRoot({
       "type": "mysql",
-      "host": "localhost",
+      "host": "db",
       "port": 3306,
       "username": "root",
       "password": "example",
